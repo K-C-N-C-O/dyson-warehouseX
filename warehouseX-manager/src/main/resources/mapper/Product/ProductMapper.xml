@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dyson.warehouseX.manager.mapper.ProductMapper">
+
+    <resultMap id="productMap" type="com.dyson.model.entity.product.Product" autoMapping="true"></resultMap>
+
+    <!-- 用于select查询公用抽取的列 -->
+    <sql id="columns">
+        id,name,category_id,slider_urls,order_id,store_location,status,audit_status,audit_message,create_time,update_time,is_deleted,serial_id
+    </sql>
+
+    <select id="findByPage" resultMap="productMap">
+        select
+        p.id, p.name , p.category_id , p.slider_urls ,
+        p.order_id ,p.store_location, p.status , p.audit_status , p.audit_message , p.create_time ,
+        p.update_time , p.is_deleted ,p.serial_id,c.name categoryName
+        from product p
+        LEFT JOIN category c on c.id = p.category_id
+        <where>
+            <if test="name != null">
+                p.name = #{name}
+            </if>
+            <if test="orderId != null ">
+                and p.order_Id = #{orderId}
+            </if>
+            <if test="status != null ">
+                and p.status = #{status}
+            </if>
+            <if test="auditStatus != null ">
+                and p.audit_status = #{auditStatus}
+            </if>
+            <if test="createTime != null">
+                and p.create_time = #{createTime}
+            </if>
+            <if test="categoryId != null ">
+                and p.category_id = #{categoryId}
+            </if>
+            and p.is_deleted = 0
+        </where>
+    </select>
+
+    <insert id="save" useGeneratedKeys="true" keyProperty="id">
+        insert into product (
+            id,
+            name,
+            category_id,
+            slider_urls,
+            order_id,
+            store_location,
+            status,
+            audit_status,
+            audit_message,
+            create_time,
+            update_time,
+            is_deleted,
+            serial_id
+        ) values (
+                     #{id},
+                     #{name},
+                     #{categoryId},
+                     #{sliderUrls},
+                     #{orderId},
+                     #{storeLocation},
+                     #{status},
+                     #{auditStatus},
+                     #{auditMessage},
+                     now(),
+                     now(),
+                     0,
+                     #{serialId}
+                 )
+    </insert>
+
+<!--    根据id查询商品-->
+    <select id="findProductById" resultMap="productMap">
+        select
+            p.id, p.name , p.category_id ,
+            p.slider_urls , p.order_id , p.store_location , p.status , p.audit_status , p.audit_message , p.create_time , p.update_time , p.is_deleted ,p.serial_id,
+            c.name categoryName
+        from product p
+        INNER JOIN category c on c.id = p.category_id
+        where
+            p.id = #{id}
+    </select>
+
+<!--    修改信息-->
+    <update id="updateById" >
+        update product set
+        <if test="name != null and name != ''">
+            name = #{name},
+        </if>
+        <if test="categoryId != null and categoryId != ''">
+            category_id = #{categoryId},
+        </if>
+        <if test="sliderUrls != null and sliderUrls != ''">
+            slider_urls = #{sliderUrls},
+        </if>
+        <if test="orderId != null and orderId != ''">
+            order_id = #{orderId},
+        </if>
+        <if test="storeLocation != null and storeLocation != ''">
+            store_location = #{storeLocation},
+        </if>
+        <if test="status != null and status != ''">
+            status = #{status},
+        </if>
+        <if test="auditStatus != null and auditStatus != ''">
+            audit_status = #{auditStatus},
+        </if>
+        <if test="auditMessage != null and auditMessage != ''">
+            audit_message = #{auditMessage},
+        </if>
+        <if test="serialId!= null and serialId != ''">
+        serial_id = #{serialId},
+        </if>
+        update_time =  now()
+        where
+        id = #{id}
+    </update>
+
+    <update id="deleteById">
+        update product set
+        update_time = now() ,
+        is_deleted = 1
+        where id = #{id}
+    </update>
+
+<!--    统计前一天退货数量-->
+    <select id="selectOrderStatistics" resultType="com.dyson.model.entity.order.OrderStatistics">
+        select DATE_FORMAT(p.create_time ,'%Y-%m-%d') orderDate, count(p.id) totalNum
+        from product p where DATE_FORMAT(p.create_time ,'%Y-%m-%d') = #{createTime}
+        GROUP BY DATE_FORMAT(p.create_time ,'%Y-%m-%d')
+    </select>
+</mapper>

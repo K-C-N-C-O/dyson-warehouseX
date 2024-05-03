@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dyson.warehouseX.manager.mapper.SysUserMapper">
+
+    <!-- 用于select查询公用抽取的列 -->
+    <sql id="columns">
+        id,username,password,name,phone,description,status,create_time,update_time,is_deleted
+    </sql>
+
+    <select id="selectUserInfoByUserName" resultType="com.dyson.model.entity.system.SysUser">
+        SELECT <include refid="columns"/> from sys_user where username=#{username} and is_deleted=0
+    </select>
+
+
+<!--    用户分页查询-->
+    <select id="findByPage" resultType="com.dyson.model.entity.system.SysUser">
+        SELECT  <include refid="columns"/>
+        from sys_user
+        <where>
+            <if test="keyword != null and keyword != ''">
+                and username like CONCAT('%',#{keyword},'%')
+            </if>
+            and is_deleted=0
+        </where>
+        order by id desc
+    </select>
+
+<!--    用户添加-->
+    <insert id="save" useGeneratedKeys="true" keyProperty="id">
+        insert into sys_user (
+            id,
+            username,
+            password,
+            name,
+            phone,
+            description,
+            status,
+            create_time,
+            update_time,
+            is_deleted
+        ) values (
+                     #{id},
+                     #{username},
+                     #{password},
+                     #{name},
+                     #{phone},
+                     #{description},
+                     #{status},
+                     now(),
+                     now(),
+                     0
+                 )
+    </insert>
+
+<!--    用户修改-->
+    <update id="update">
+        update sys_user set
+        <if test="username != null and username != ''">
+            username = #{username},
+        </if>
+        <if test="password != null and password != ''">
+            password = #{password},
+        </if>
+        <if test="name != null and name != ''">
+            name = #{name},
+        </if>
+        <if test="phone != null and phone != ''">
+            phone = #{phone},
+        </if>
+        <if test="description != null and description != ''">
+            description = #{description},
+        </if>
+        <if test="status != null">
+            status = #{status},
+        </if>
+        update_time =  now()
+        where
+        id = #{id}
+    </update>
+
+<!--    根据id删除用户-->
+    <update id="delete">
+        update sys_user set is_deleted=1 where id=#{userId}
+    </update>
+
+
+</mapper>

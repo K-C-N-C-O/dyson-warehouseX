@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="929b7b1e-8245-40f2-b070-2b2c536c94c9" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../develop/apache-maven-3.9.6" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2fYAlFdnwbRETShiBX7N7cja1f9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/code/dyson-warehouse-dev&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;3d914a1b9837b006b5f31aa85bcf74fb&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="ManagerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="warehouseX-manager" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dyson.warehouseX.manager.ManagerApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dyson.warehouseX.manager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.ManagerApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="929b7b1e-8245-40f2-b070-2b2c536c94c9" name="Changes" comment="" />
+      <created>1713967787173</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713967787173</updated>
+      <workItem from="1713967788411" duration="3034000" />
+      <workItem from="1713975778426" duration="9761000" />
+      <workItem from="1714175835065" duration="613000" />
+      <workItem from="1714238976505" duration="17598000" />
+      <workItem from="1714305012099" duration="1106000" />
+      <workItem from="1714322072959" duration="177000" />
+      <workItem from="1714333197924" duration="3486000" />
+      <workItem from="1714419411918" duration="2592000" />
+      <workItem from="1714506352344" duration="66000" />
+      <workItem from="1714506478872" duration="8000" />
+      <workItem from="1714507621367" duration="6495000" />
+      <workItem from="1714516424521" duration="399000" />
+      <workItem from="1714574681180" duration="1892000" />
+      <workItem from="1714578074798" duration="148000" />
+      <workItem from="1714578266010" duration="139000" />
+      <workItem from="1714580811595" duration="10851000" />
+      <workItem from="1714593451655" duration="133000" />
+      <workItem from="1714598520063" duration="107000" />
+      <workItem from="1714599082137" duration="791000" />
+      <workItem from="1714599931294" duration="17000" />
+      <workItem from="1714658455058" duration="5460000" />
+      <workItem from="1714667350879" duration="2793000" />
+      <workItem from="1714673755875" duration="36000" />
+      <workItem from="1714681240610" duration="159000" />
+      <workItem from="1714683267246" duration="2782000" />
+      <workItem from="1714690213688" duration="406000" />
+      <workItem from="1714695707170" duration="2037000" />
+      <workItem from="1714762599514" duration="970000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -1,0 +1,3 @@
+com\dyson\warehouseX\common\exception\GlobalExceptionHandler.class
+com\dyson\warehouseX\common\exception\PException.class
+com\dyson\warehouseX\common\config\Knife4jConfig.class
