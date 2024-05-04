@@ -36,6 +36,7 @@ public class ProductServiceImpl implements ProductService {
         product.setStoreLocation(productInfoDto.getStoreLocation());
         product.setOrderId(productInfoDto.getOrderId());
         product.setSliderUrls(productInfoDto.getSliderUrls());
+        product.setPostcode(productInfoDto.getPostcode());
         product.setSerialId(serialId);
         product.setStatus(0);
         product.setAuditStatus(0);

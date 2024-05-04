@@ -24,6 +24,11 @@
         JOIN sys_role r ON ur.role_id = r.id
         WHERE u.id = #{id};
     </select>
+    <select id="findRoleId" resultType="long">
+        select role_id
+        from sys_user_role
+        where user_id=#{id}
+    </select>
 
 
 </mapper>

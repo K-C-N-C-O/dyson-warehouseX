@@ -21,4 +21,6 @@ public class ProductInfoDto {
     @Schema(description = "存放位置")
     private String storeLocation;				// 存放位置
 
+    private String postcode;
+
 }

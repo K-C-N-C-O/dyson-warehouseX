@@ -4,7 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="929b7b1e-8245-40f2-b070-2b2c536c94c9" name="Changes" comment="" />
+    <list default="true" id="929b7b1e-8245-40f2-b070-2b2c536c94c9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5390b254-0cef-4824-922b-f03d14137fe8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5390b254-0cef-4824-922b-f03d14137fe8.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/warehouseX-common/common-service/target/common-service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/warehouseX-common/common-service/target/common-service-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/warehouseX-common/common-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/warehouseX-common/common-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/warehouseX-common/common-util/target/common-util-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/warehouseX-common/common-util/target/common-util-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/warehouseX-common/common-util/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/warehouseX-common/common-util/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/warehouseX-manager/src/main/java/com/dyson/warehouseX/manager/config/WebMvcConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/warehouseX-manager/src/main/java/com/dyson/warehouseX/manager/config/WebMvcConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/warehouseX-manager/src/main/java/com/dyson/warehouseX/manager/mapper/SysRoleUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/warehouseX-manager/src/main/java/com/dyson/warehouseX/manager/mapper/SysRoleUserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/warehouseX-manager/src/main/java/com/dyson/warehouseX/manager/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/warehouseX-manager/src/main/java/com/dyson/warehouseX/manager/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/warehouseX-manager/src/main/java/com/dyson/warehouseX/manager/service/impl/SysUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/warehouseX-manager/src/main/java/com/dyson/warehouseX/manager/service/impl/SysUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/warehouseX-manager/src/main/resources/mapper/Product/ProductMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/warehouseX-manager/src/main/resources/mapper/Product/ProductMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/warehouseX-manager/src/main/resources/mapper/user/SysRoleUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/warehouseX-manager/src/main/resources/mapper/user/SysRoleUserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/warehouseX-manager/target/classes/com/dyson/warehouseX/manager/config/WebMvcConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/warehouseX-manager/target/classes/com/dyson/warehouseX/manager/config/WebMvcConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/warehouseX-manager/target/classes/com/dyson/warehouseX/manager/mapper/SysRoleUserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/warehouseX-manager/target/classes/com/dyson/warehouseX/manager/mapper/SysRoleUserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/warehouseX-manager/target/classes/com/dyson/warehouseX/manager/service/impl/ProductServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/warehouseX-manager/target/classes/com/dyson/warehouseX/manager/service/impl/ProductServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/warehouseX-manager/target/classes/com/dyson/warehouseX/manager/service/impl/SysUserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/warehouseX-manager/target/classes/com/dyson/warehouseX/manager/service/impl/SysUserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/warehouseX-manager/target/classes/mapper/Product/ProductMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/warehouseX-manager/target/classes/mapper/Product/ProductMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/warehouseX-manager/target/classes/mapper/user/SysRoleUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/warehouseX-manager/target/classes/mapper/user/SysRoleUserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/warehouseX-manager/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/warehouseX-manager/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/warehouseX-manager/target/warehouseX-manager-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/warehouseX-manager/target/warehouseX-manager-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/warehouseX-manager/target/warehouseX-manager-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/warehouseX-manager/target/warehouseX-manager-1.0-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/warehouseX-model/src/main/java/com/dyson/model/dto/product/ProductInfoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/warehouseX-model/src/main/java/com/dyson/model/dto/product/ProductInfoDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/warehouseX-model/src/main/java/com/dyson/model/entity/product/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/warehouseX-model/src/main/java/com/dyson/model/entity/product/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/warehouseX-model/src/main/java/com/dyson/model/entity/system/SysUserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/warehouseX-model/src/main/java/com/dyson/model/entity/system/SysUserInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/warehouseX-model/target/classes/com/dyson/model/dto/product/ProductInfoDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/warehouseX-model/target/classes/com/dyson/model/dto/product/ProductInfoDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/warehouseX-model/target/classes/com/dyson/model/entity/product/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/warehouseX-model/target/classes/com/dyson/model/entity/product/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/warehouseX-model/target/classes/com/dyson/model/entity/system/SysUserInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/warehouseX-model/target/classes/com/dyson/model/entity/system/SysUserInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/warehouseX-model/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/warehouseX-model/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/warehouseX-model/target/warehouseX-model-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/warehouseX-model/target/warehouseX-model-1.0-SNAPSHOT.jar" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +46,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -44,7 +77,8 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/code/dyson-warehouse-dev&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/dyson-warehouse-dev&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -121,6 +155,10 @@
       <workItem from="1714690213688" duration="406000" />
       <workItem from="1714695707170" duration="2037000" />
       <workItem from="1714762599514" duration="970000" />
+      <workItem from="1714836402551" duration="386000" />
+      <workItem from="1714840608821" duration="1052000" />
+      <workItem from="1714841824506" duration="4269000" />
+      <workItem from="1714847254735" duration="1225000" />
     </task>
     <servers />
   </component>

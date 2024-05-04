@@ -13,4 +13,6 @@ public interface SysRoleUserMapper {
     List<Long> selectRoleIdsByUserId(Long userId);
 
     String findRoleById(Long id);
+
+    Long findRoleId(Long id);
 }

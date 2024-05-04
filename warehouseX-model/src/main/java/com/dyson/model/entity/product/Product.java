@@ -37,6 +37,7 @@ public class Product extends BaseEntity {
 	@Schema(description = "序列号")
 	private String serialId;         //序列号
 
+	private String postcode;
 
 	//扩展属性
 	private String categoryName;

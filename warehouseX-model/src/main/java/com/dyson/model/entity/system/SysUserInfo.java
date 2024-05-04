@@ -10,11 +10,16 @@ import lombok.Data;
  **/
 @Data
 public class SysUserInfo {
+    @Schema(description = "唯一标识")
+    private Long id;
+
     @Schema(description = "用户名")
     private String username;
 
     @Schema(description = "密码")
     private String password;
+
+    private Long roleId;
 
     @Schema(description = "职位")
     private String role;

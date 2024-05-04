@@ -97,6 +97,7 @@ public class SysUserServiceImpl implements SysUserService {
         List<SysUserInfo> list1=new ArrayList<>();
         for(SysUser sysUser:list){
             SysUserInfo sysUserInfo=new SysUserInfo();
+            sysUserInfo.setId(sysUser.getId());
             sysUserInfo.setUsername(sysUser.getUsername());
             sysUserInfo.setPassword(sysUser.getPassword());
             sysUserInfo.setName(sysUser.getName());
@@ -104,6 +105,7 @@ public class SysUserServiceImpl implements SysUserService {
             sysUserInfo.setDescription(sysUser.getDescription());
             sysUserInfo.setStatus(sysUser.getStatus());
             sysUserInfo.setRole(sysRoleUserMapper.findRoleById(sysUser.getId()));
+            sysUserInfo.setRoleId(sysRoleUserMapper.findRoleId(sysUser.getId()));
             list1.add(sysUserInfo);
         }
         PageInfo<SysUserInfo> pageInfo=new PageInfo<>(list1);

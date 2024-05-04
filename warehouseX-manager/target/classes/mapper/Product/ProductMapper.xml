@@ -6,14 +6,14 @@
 
     <!-- 用于select查询公用抽取的列 -->
     <sql id="columns">
-        id,name,category_id,slider_urls,order_id,store_location,status,audit_status,audit_message,create_time,update_time,is_deleted,serial_id
+        id,name,category_id,slider_urls,order_id,store_location,status,audit_status,audit_message,create_time,update_time,is_deleted,serial_id,postcode
     </sql>
 
     <select id="findByPage" resultMap="productMap">
         select
         p.id, p.name , p.category_id , p.slider_urls ,
         p.order_id ,p.store_location, p.status , p.audit_status , p.audit_message , p.create_time ,
-        p.update_time , p.is_deleted ,p.serial_id,c.name categoryName
+        p.update_time , p.is_deleted ,p.serial_id,p.postcode,c.name categoryName
         from product p
         LEFT JOIN category c on c.id = p.category_id
         <where>
@@ -53,7 +53,8 @@
             create_time,
             update_time,
             is_deleted,
-            serial_id
+            serial_id,
+            postcode
         ) values (
                      #{id},
                      #{name},
@@ -67,7 +68,8 @@
                      now(),
                      now(),
                      0,
-                     #{serialId}
+                     #{serialId},
+                     #{postcode}
                  )
     </insert>
 
@@ -75,7 +77,7 @@
     <select id="findProductById" resultMap="productMap">
         select
             p.id, p.name , p.category_id ,
-            p.slider_urls , p.order_id , p.store_location , p.status , p.audit_status , p.audit_message , p.create_time , p.update_time , p.is_deleted ,p.serial_id,
+            p.slider_urls , p.order_id , p.store_location , p.status , p.audit_status , p.audit_message , p.create_time , p.update_time , p.is_deleted ,p.serial_id,p.postcode,
             c.name categoryName
         from product p
         INNER JOIN category c on c.id = p.category_id
@@ -112,6 +114,9 @@
         </if>
         <if test="serialId!= null and serialId != ''">
         serial_id = #{serialId},
+        </if>
+        <if test="postcode!= null and postcode != ''">
+            postcode = #{postcode},
         </if>
         update_time =  now()
         where

@@ -18,8 +18,8 @@ public class WebMvcConfiguration implements WebMvcConfigurer {
     //拦截器注册
     public void addInterceptors(InterceptorRegistry registry){
         registry.addInterceptor(loginAuthInterceptor)
-                .excludePathPatterns("/admin/system/index/login")
-                //.excludePathPatterns("/**")
+                //.excludePathPatterns("/admin/system/index/login")
+                .excludePathPatterns("/**")
                 .addPathPatterns("/**");
     }
 
